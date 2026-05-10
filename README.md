@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/license-MIT-1f6feb?style=for-the-badge"/>
 </p>
 
-<sub><i>A from-the-ground-up reproduction of GPT-2 124M. The point isn't to beat the original — it's to leave nothing as a black box.</i></sub>
+<sub><i>A from-the-ground-up reproduction of GPT-2 124M. The point isn't to beat the original · it's to leave nothing as a black box.</i></sub>
 
 </div>
 
@@ -82,7 +82,7 @@ uv run eval.py --ckpt out/124m/last.pt --tasks hellaswag,lambada
 | Model | Params | Tokens | HellaSwag (acc) | LAMBADA (ppl) | Notes |
 |---|---|---|---|---|---|
 | GPT-2 124M (OpenAI) | 124M | ~10B | 0.289 | 35.1 | reference |
-| nanoGPT 124M | 124M | ~10B | 0.296 | — | community baseline |
+| nanoGPT 124M | 124M | ~10B | 0.296 | · | community baseline |
 | **this repo** | 124M | TBD | TBD | TBD | first run |
 
 ## Cost receipts <sub><i>(in dollars, no hand-waving)</i></sub>
@@ -90,7 +90,7 @@ uv run eval.py --ckpt out/124m/last.pt --tasks hellaswag,lambada
 | Stage | Hardware | Wall-clock | Tokens | $ |
 |---|---|---|---|---|
 | Pretrain 124M | TBD | TBD | TBD | TBD |
-| Eval suite | TBD | TBD | — | TBD |
+| Eval suite | TBD | TBD | · | TBD |
 
 ## Roadmap
 
@@ -121,11 +121,11 @@ uv run eval.py --ckpt out/124m/last.pt --tasks hellaswag,lambada
 
 ## Inspiration & required reading
 
-- [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) — the canonical clean reference
-- [karpathy/build-nanogpt](https://github.com/karpathy/build-nanogpt) — the lecture-companion build
-- [karpathy/llm.c](https://github.com/karpathy/llm.c) — when you want to remove every abstraction
-- [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) — Sebastian Raschka's textbook companion
-- [karpathy/nanochat](https://github.com/karpathy/nanochat) — pretrain → SFT → RLHF → serve in one repo
+- [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) · the canonical clean reference
+- [karpathy/build-nanogpt](https://github.com/karpathy/build-nanogpt) · the lecture-companion build
+- [karpathy/llm.c](https://github.com/karpathy/llm.c) · when you want to remove every abstraction
+- [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) · Sebastian Raschka's textbook companion
+- [karpathy/nanochat](https://github.com/karpathy/nanochat) · pretrain → SFT → RLHF → serve in one repo
 
 ---
 
