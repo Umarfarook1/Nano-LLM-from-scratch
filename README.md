@@ -26,7 +26,7 @@
 
 There's a difference between *using* an LLM and *building* one. This repo walks the second path end-to-end: byte-pair tokenizer, transformer blocks (causal attention, RoPE, RMSNorm, SwiGLU), a real pre-training run on FineWeb-edu, downstream evals (HellaSwag / LAMBADA), and a KV-cached inference path. Every choice is documented; every tradeoff is ablated.
 
-> **Status:** scaffolding the training loop. First milestone: hit nanoGPT-parity loss on OpenWebText subset.
+> **Status:** design complete, implementation starting · no code in the repo yet. First milestone: hit nanoGPT-parity loss on OpenWebText subset.
 
 ## Architecture
 
@@ -61,7 +61,7 @@ flowchart LR
 | Optimizer | AdamW + cosine + warmup | Standard, well-understood |
 | Mixed precision | bf16 + grad-clip | Numerically friendly on H100 |
 
-## Quickstart <sub><i>(coming soon)</i></sub>
+## Quickstart <sub><i>(planned · code landing incrementally)</i></sub>
 
 ```bash
 # pretrain (single GPU)
@@ -103,7 +103,7 @@ uv run eval.py --ckpt out/124m/last.pt --tasks hellaswag,lambada
 - [ ] Push weights + tokenizer + eval card to Hugging Face Hub
 - [ ] Companion blog post: *"What I learned training a 124M model from scratch"*
 
-## Project layout
+## Planned layout
 
 ```
 .
